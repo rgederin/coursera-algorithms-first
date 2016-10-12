@@ -94,25 +94,30 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
     private class RandomIterator implements Iterator<Item> {
 
         // private int iteratorArray[] = new int[size];
-        private int[] iteratorArray = new int[size];
+        //private int[] iteratorArray = internalArray;
         int current = 0;
+        int count = 0;
 
         public RandomIterator() {
-            for (int i = 0; i < size; i++) {
+            /*for (int i = 0; i < size; i++) {
                 iteratorArray[i] = i;
                 StdRandom.shuffle(iteratorArray);
-            }
+            }*/
+            StdRandom.shuffle(internalArray);
         }
 
         public boolean hasNext() {
-            return current != size;
+            return count != size;
         }
 
         public Item next() {
             if (!hasNext())
                 throw new NoSuchElementException();
-
-            return internalArray[iteratorArray[current++]];
+            while (internalArray[current]==null){
+                current++;
+            }
+            count++;
+            return internalArray[current++];
         }
 
         public void remove() {
@@ -123,17 +128,16 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
 
     public static void main(String[] args) {
         RandomizedQueue<Integer> rq = new RandomizedQueue<Integer>();
-        System.out.println(rq.iterator().hasNext());
+       // System.out.println(rq.iterator().hasNext());
+        rq.enqueue(1);
+        rq.enqueue(2);
         rq.enqueue(3);
-        rq.enqueue(4);
-        rq.enqueue(5);
-        rq.enqueue(6);
-        rq.enqueue(7);
+       Iterator<Integer> integerIterator = rq.iterator();
 
-        Iterator<Integer> iterator = rq.iterator();
-        while (iterator.hasNext()){
-            System.out.println(iterator.next());
-        }
+
+       for (int i = 0; i <10; i++){
+           System.out.println(integerIterator.next());
+       }
 
     }
 
