@@ -1,9 +1,9 @@
 package collinear
 
 /*************************************************************************
- *  Compilation:  javac LineSegment.java
+ *  Compilation:  javac com.gederin.collinear.LineSegment.java
  *  Execution:    none
- *  Dependencies: Point.java
+ *  Dependencies: com.gederin.collinear.Point.java
  *
  *  An immutable data type for Line segments in the plane.
  *  For use on Coursera, Algorithms Part I programming assignment.

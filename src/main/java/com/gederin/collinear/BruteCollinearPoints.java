@@ -1,3 +1,5 @@
+package com.gederin.collinear;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -7,21 +9,12 @@ import java.util.List;
  */
 public class BruteCollinearPoints {
 
-  //  private LineSegment[] segments;
+    //  private com.gederin.collinear.LineSegment[] segments;
 
     private List<LineSegment> collinearPoints = new ArrayList<LineSegment>();
 
     public BruteCollinearPoints(Point[] points) {
-        if (points == null) {
-            throw new NullPointerException();
-        }
-        for (int i = 0; i < points.length; i++) {
-            for (int j = i + 1; j < points.length; j++) {
-                if (points[i].compareTo(points[j]) == 0) {
-                    throw new IllegalArgumentException();
-                }
-            }
-        }
+        inputChecking(points);
         bruteForse(points);
     }
 
@@ -34,12 +27,11 @@ public class BruteCollinearPoints {
     public LineSegment[] segments() {
         Object[] arr = this.collinearPoints.toArray();
         LineSegment[] lineArr = Arrays.copyOf(arr, arr.length, LineSegment[].class);
-        return  lineArr;
+        return lineArr;
     }
 
 
     private void bruteForse(Point[] points) {
-       // List<LineSegment> lineSegments = new ArrayList<LineSegment>();
         int size = points.length;
         for (int p = 0; p < size; p++) {
             for (int q = p + 1; q < size; q++) {
@@ -62,11 +54,19 @@ public class BruteCollinearPoints {
                 }
             }
         }
-       /* segments = new LineSegment[lineSegments.size()];
-        for (int i = 0; i < lineSegments.size(); i++) {
-            segments[i] = lineSegments.get(i);
-        }*/
     }
 
+    private void inputChecking(Point[] points) {
+        if (points == null) {
+            throw new NullPointerException();
+        }
 
+        for (int i = 0; i < points.length; i++) {
+            for (int j = i + 1; j < points.length; j++) {
+                if (points[i].compareTo(points[j]) == 0) {
+                    throw new IllegalArgumentException();
+                }
+            }
+        }
+    }
 }

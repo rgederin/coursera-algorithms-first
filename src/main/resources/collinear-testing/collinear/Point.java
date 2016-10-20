@@ -1,6 +1,6 @@
 package collinear /******************************************************************************
- *  Compilation:  javac Point.java
- *  Execution:    java Point
+ *  Compilation:  javac com.gederin.collinear.Point.java
+ *  Execution:    java com.gederin.collinear.Point
  *  Dependencies: none
  *  
  *  An immutable data type for points in the plane.
@@ -102,7 +102,7 @@ public class Point implements Comparable<Point> {
     }
 
     /**
-     * Unit tests the Point data type.
+     * Unit tests the com.gederin.collinear.Point data type.
      */
     public static void main(String[] args) {
         /* YOUR CODE HERE */
