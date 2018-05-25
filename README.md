@@ -9,13 +9,13 @@ https://www.coursera.org/learn/algorithms-part1/home/welcome
 
 ## Order of growth
 
-![order](https://github.com/rgederin/coursera-algotithms-first/blob/master/img/order1.png)
+![order](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/order1.png)
 
-![order](https://github.com/rgederin/coursera-algotithms-first/blob/master/img/order2.png)
+![order](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/order2.png)
 
 ## Binary search
 
-![bseacrh](https://github.com/rgederin/coursera-algotithms-first/blob/master/img/bseacrh.png)
+![bseacrh](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/bseacrh.png)
 
 ```
      public static int binarySearch(int[] a, int key) {
