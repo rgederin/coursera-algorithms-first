@@ -12,6 +12,7 @@ https://www.coursera.org/learn/algorithms-part1/home/welcome
 - [Sorting](#sorting)
     * [Selection sort](#selection-sort)
     * [Insertion sort](#insertion-sort)
+    * [Shell sort](#shell-sort)
 
 # Order of growth
 
@@ -205,6 +206,32 @@ For these reasons, and because it is also stable, insertion sort is often used a
 * Adaptive: O(n) time when nearly sorted
 * Very low overhead
 
+https://www.toptal.com/developers/sorting-algorithms/insertion-sort
+
+## Shell sort
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/shell1.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/shell2.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/shell3.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/shell4.png)
+
+The worse-case time complexity of shell sort depends on the increment sequence. For the increments 1 4 13 40 121…, which is what is used here, the time complexity is O(n3/2). For other increments, time complexity is known to be O(n4/3) and even O(n·lg2(n)). Neither tight upper bounds on time complexity nor the best increment sequence are known.
+
+Because shell sort is based on insertion sort, shell sort inherits insertion sort’s adaptive properties. The adapation is not as dramatic because shell sort requires one pass through the data for each increment, but it is significant. For the increment sequence shown above, there are log3(n) increments, so the time complexity for nearly sorted data is O(n·log3(n)).
+
+Because of its low overhead, relatively simple implementation, adaptive properties, and sub-quadratic time complexity, shell sort may be a viable alternative to the O(n·lg(n)) sorting algorithms for some applications when the data to be sorted is not very large.
+
+**PROPERTIES:**
+
+* Not stable
+* O(1) extra space
+* O(n3/2) time as shown (see below)
+* Adaptive: O(n·lg(n)) time when nearly sort
+
+https://www.toptal.com/developers/sorting-algorithms/shell-sort
 
 # Grades
 
