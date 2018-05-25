@@ -7,6 +7,8 @@ https://www.coursera.org/learn/algorithms-part1/home/welcome
 - [Order of growth](#order-of-growth)
 - [Binary search](#binary-search)
 - [Stack and Queue](#stack-and-queue)
+    * [Stack](#stack)
+    * [Queue](#queue)
 
 # Order of growth
 
@@ -61,7 +63,9 @@ https://www.coursera.org/learn/algorithms-part1/home/welcome
 
 ![order](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/s1.png)
 
+
 ## Stack
+
 
 ![order](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/s2.png)
 
@@ -100,6 +104,15 @@ public class LinkedStackOfStrings {
 ![order](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/s4.png)
 
 ![order](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/s5.png)
+
+
+## Queue
+
+![order](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/q1.png)
+
+![order](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/q2.png)
+
+![order](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/q3.png)
 
 # Grades
 
