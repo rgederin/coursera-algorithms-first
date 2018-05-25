@@ -15,7 +15,7 @@ https://www.coursera.org/learn/algorithms-part1/home/welcome
 
 ## Binary search
 
-![bseacrh](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/bseacrh.png)
+![bseacrh](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/bsearch.png)
 
 ```
      public static int binarySearch(int[] a, int key) {
