@@ -168,6 +168,44 @@ However, selection sort has the property of minimizing the number of swaps. In a
 
 https://www.toptal.com/developers/sorting-algorithms/selection-sort
 
+## Insertion sort
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/sort5.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/sort6.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/sort7.png)
+
+```
+/**
+ * In iteration i, swap a[i] with each larger entry to its left.
+ */
+public class InsertionsSort {
+    public static void sort(Comparable[] a) {
+        int N = a.length;
+        
+        for (int i = 0; i < N; i++)
+            
+            for (int j = i; j > 0; j--)
+                if (less(a[j], a[j - 1]))
+                    exchange(a, j, j - 1);
+                else break;
+    }
+}
+```
+Although it is one of the elementary sorting algorithms with O(n2) worst-case time, insertion sort is the algorithm of choice either when the data is nearly sorted (because it is adaptive) or when the problem size is small (because it has low overhead).
+
+For these reasons, and because it is also stable, insertion sort is often used as the recursive base case (when the problem size is small) for higher overhead divide-and-conquer sorting algorithms, such as merge sort or quick sort
+
+**PROPERTIES:**
+
+* Stable
+* O(1) extra space
+* O(n2) comparisons and swaps
+* Adaptive: O(n) time when nearly sorted
+* Very low overhead
+
+
 # Grades
 
 5/5 Assignments Passed
