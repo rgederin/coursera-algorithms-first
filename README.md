@@ -13,6 +13,7 @@ https://www.coursera.org/learn/algorithms-part1/home/welcome
     * [Selection sort](#selection-sort)
     * [Insertion sort](#insertion-sort)
     * [Shell sort](#shell-sort)
+    * [Merge sort](#merge-sort)
 
 # Order of growth
 
@@ -232,6 +233,41 @@ Because of its low overhead, relatively simple implementation, adaptive properti
 * Adaptive: O(n·lg(n)) time when nearly sort
 
 https://www.toptal.com/developers/sorting-algorithms/shell-sort
+
+
+## Merge sort
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/merge1.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/merge2.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/merge3.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/merge4.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/merge5.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/merge6.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/merge7.png)
+
+Merge sort is very predictable. It makes between 0.5lg(n) and lg(n) comparisons per element, and between lg(n) and 1.5lg(n) swaps per element. The minima are achieved for already sorted data; the maxima are achieved, on average, for random data. If using Θ(n) extra space is of no concern, then merge sort is an excellent choice: It is simple to implement, and it is the only stable O(n·lg(n)) sorting algorithm. Note that when sorting linked lists, merge sort requires only Θ(lg(n)) extra space (for recursion).
+
+Merge sort is the algorithm of choice for a variety of situations: when stability is required, when sorting linked lists, and when random access is much more expensive than sequential access (for example, external sorting on tape).
+
+There do exist linear time in-place merge algorithms for the last step of the algorithm, but they are both expensive and complex. The complexity is justified for applications such as external sorting when Θ(n) extra space is not available.
+
+**PROPERTIES:**
+
+* Stable
+* Θ(n) extra space for arrays (as shown)
+* Θ(lg(n)) extra space for linked lists
+* Θ(n·lg(n)) time
+* Not adaptive
+* Does not require random access to data
+
+https://www.toptal.com/developers/sorting-algorithms/merge-sort
+
 
 # Grades
 
