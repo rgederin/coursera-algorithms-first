@@ -6,14 +6,18 @@ https://www.coursera.org/learn/algorithms-part1/home/welcome
 
 - [Order of growth](#order-of-growth)
 - [Binary search](#binary-search)
+- [Stack and Queue](#stack-and-queue)
 
-## Order of growth
+# Order of growth
+
 
 ![order](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/order1.png)
 
 ![order](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/order2.png)
 
-## Binary search
+
+# Binary search
+
 
 ![bseacrh](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/bsearch.png)
 
@@ -52,6 +56,50 @@ https://www.coursera.org/learn/algorithms-part1/home/welcome
     }
     
 ```
+
+# Stack and Queue
+
+![order](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/s1.png)
+
+## Stack
+
+![order](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/s2.png)
+
+
+```
+public class LinkedStackOfStrings {
+        private Node first = null;
+
+        private class Node {
+            String item;
+            Node next;
+        }
+
+        public boolean isEmpty() {
+            return first == null;
+        }
+
+        public void push(String item) {
+            Node oldfirst = first;
+            first = new Node();
+            first.item = item;
+            first.next = oldfirst;
+        }
+
+        public String pop() {
+            String item = first.item;
+            first = first.next;
+            return item;
+        }
+    }
+```
+
+
+![order](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/s3.png)
+
+![order](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/s4.png)
+
+![order](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/s5.png)
 
 # Grades
 
