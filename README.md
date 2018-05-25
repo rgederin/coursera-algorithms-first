@@ -9,6 +9,9 @@ https://www.coursera.org/learn/algorithms-part1/home/welcome
 - [Stack and Queue](#stack-and-queue)
     * [Stack](#stack)
     * [Queue](#queue)
+- [Sorting](#sorting)
+    * [Selection sort](#selection-sort)
+    * [Insertion sort](#insertion-sort)
 
 # Order of growth
 
@@ -113,6 +116,57 @@ public class LinkedStackOfStrings {
 ![order](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/q2.png)
 
 ![order](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/q3.png)
+
+
+# Sorting
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/sort1.png)
+
+## Selection sort
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/sort2.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/sort3.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/sort4.png)
+
+```
+/**
+ * Selection sort:
+ * 
+ * 1. In iteration i, find index min of smallest remaining entry.
+ * 2. Swap a[i] and a[min].
+ */
+public class SelectionSort {
+    public static void sort(Comparable[] a) {
+        int N = a.length;
+
+        for (int i = 0; i < N; i++) {
+            int min = i;
+
+            for (int j = i + 1; j < N; j++)
+                if (less(a[j], a[min]))
+                    min = j;
+
+            exchange(a, i, min);
+        }
+    }
+}
+```
+
+From the comparions presented here, one might conclude that selection sort should never be used. It does not adapt to the data in any way (notice that the four animations above run in lock step), so its runtime is always quadratic.
+
+However, selection sort has the property of minimizing the number of swaps. In applications where the cost of swapping items is high, selection sort very well may be the algorithm of choice.
+
+**PROPERTIES:**
+
+* Not stable
+* O(1) extra space
+* Θ(n2) comparisons
+* Θ(n) swaps
+* Not adaptive
+
+https://www.toptal.com/developers/sorting-algorithms/selection-sort
 
 # Grades
 
