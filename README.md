@@ -10,10 +10,12 @@ https://www.coursera.org/learn/algorithms-part1/home/welcome
     * [Stack](#stack)
     * [Queue](#queue)
 - [Sorting](#sorting)
+    * [Bubble Sort](#bubble-sort) 
     * [Selection sort](#selection-sort)
     * [Insertion sort](#insertion-sort)
     * [Shell sort](#shell-sort)
     * [Merge sort](#merge-sort)
+    * [Quick sort](#quick-sort)
 
 # Order of growth
 
@@ -123,6 +125,34 @@ public class LinkedStackOfStrings {
 # Sorting
 
 ![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/sort1.png)
+
+## Bubble sort
+
+In bubble sort algorithm, array is traversed from first element to last element. Here, current element is compared with the next element. If current element is greater than the next element, it is swapped.
+
+```
+    static void bubbleSort(int[] arr) {  
+        int n = arr.length;  
+        int temp = 0;  
+         for(int i=0; i < n; i++){  
+                 for(int j=1; j < (n-i); j++){  
+                          if(arr[j-1] > arr[j]){  
+                                 //swap elements  
+                                 temp = arr[j-1];  
+                                 arr[j-1] = arr[j];  
+                                 arr[j] = temp;  
+                         }             
+                 }  
+         }  
+    }  
+````
+
+**PROPERTIES:**
+
+* Stable
+* O(1) extra space
+* O(n2) comparisons and swaps
+* Adaptive: O(n) when nearly sorted
 
 ## Selection sort
 
@@ -268,6 +298,39 @@ There do exist linear time in-place merge algorithms for the last step of the al
 
 https://www.toptal.com/developers/sorting-algorithms/merge-sort
 
+## Quick sort
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/quick1.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/quick2.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/quick3.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/quick4.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/quick5.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/quick6.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/quick7.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/quick8.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/quick9.png)
+
+
+When carefully implemented, quick sort is robust and has low overhead. When a stable sort is not needed, quick sort is an excellent general-purpose sort – although the 3-way partitioning version should always be used instead.
+
+The 2-way partitioning code shown above is written for clarity rather than optimal performance; it exhibits poor locality, and, critically, exhibits O(n2) time when there are few unique keys. A more efficient and robust 2-way partitioning method is given in Quicksort is Optimal by Robert Sedgewick and Jon Bentley. The robust partitioning produces balanced recursion when there are many values equal to the pivot, yielding probabilistic guarantees of O(n·lg(n)) time and O(lg(n)) space for all inputs.
+
+With both sub-sorts performed recursively, quick sort requires O(n) extra space for the recursion stack in the worst case when recursion is not balanced. This is exceedingly unlikely to occur, but it can be avoided by sorting the smaller sub-array recursively first; the second sub-array sort is a tail recursive call, which may be done with iteration instead. With this optimization, the algorithm uses O(lg(n)) extra space in the worst case.
+
+**PROPERTIES:**
+
+* Not stable
+* O(lg(n)) extra space (see discussion)
+* O(n2) time, but typically O(n·lg(n)) time
+* Not adaptive
 
 # Grades
 
