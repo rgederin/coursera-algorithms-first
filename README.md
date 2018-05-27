@@ -10,13 +10,17 @@ https://www.coursera.org/learn/algorithms-part1/home/welcome
     * [Stack](#stack)
     * [Queue](#queue)
 - [Sorting](#sorting)
-    * [Bubble Sort](#bubble-sort) 
+    * [Bubble sort](#bubble-sort) 
     * [Selection sort](#selection-sort)
     * [Insertion sort](#insertion-sort)
     * [Shell sort](#shell-sort)
     * [Merge sort](#merge-sort)
     * [Quick sort](#quick-sort)
-
+- [Priority queue](#priority-queue)
+    * [Binary heap](#binary-heap)
+    * [Heapsort](#heapsort)
+    
+    
 # Order of growth
 
 
@@ -331,6 +335,57 @@ With both sub-sorts performed recursively, quick sort requires O(n) extra space 
 * O(lg(n)) extra space (see discussion)
 * O(n2) time, but typically O(n·lg(n)) time
 * Not adaptive
+
+# Priority queue
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/pr1.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/pr2.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/pr3.png)
+
+## Binary heap
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/bh1.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/bh2.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/bh3.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/bh4.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/bh5.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/bh6.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/bh7.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/bh8.png)
+
+## Heapsort
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/hs1.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/hs2.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/hs3.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/hs4.png)
+
+Heap sort is simple to implement, performs an O(n·lg(n)) in-place sort, but is not stable.
+
+The first loop, the Θ(n) “heapify” phase, puts the array into heap order. The second loop, the O(n·lg(n)) “sortdown” phase, repeatedly extracts the maximum and restores heap order.
+
+The sink function is written recursively for clarity. Thus, as shown, the code requires Θ(lg(n)) space for the recursive call stack. However, the tail recursion in sink() is easily converted to iteration, which yields the O(1) space bound.
+
+Both phases are slightly adaptive, though not in any particularly useful manner. In the nearly sorted case, the heapify phase destroys the original order. In the reversed case, the heapify phase is as fast as possible since the array starts in heap order, but then the sortdown phase is typical. In the few unique keys case, there is some speedup but not as much as in shell sort or 3-way quicksort.
+
+**PROPERTIES:**
+
+* Not stable
+* O(1) extra space (see discussion)
+* O(n·lg(n)) time
+* Not really adaptive
 
 # Grades
 
