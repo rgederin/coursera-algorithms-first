@@ -25,7 +25,12 @@ https://www.coursera.org/learn/algorithms-part1/home/welcome
     * [2-3 trees](#2-3-trees)
     * [Red black trees](#red-black-trees)
     * [B-trees](#b-trees)
-    
+- [Hash tables](#hash-tables)
+    * [Separate chaining](#separate-chaining)
+    * [Linnear probing](#linnear-probing)
+- [Grades](#grades)
+
+
 # Order of growth
 
 
@@ -463,6 +468,40 @@ Both phases are slightly adaptive, though not in any particularly useful manner.
 ![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/bt2.png)
 
 ![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/bt3.png)
+
+# Hash tables
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/ht1.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/ht2.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/ht3.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/ht4.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/ht5.png)
+
+## Separate chaining
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/ht6.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/ht7.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/ht8.png)
+
+## Linear probing
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/ht9.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/ht10.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/ht11.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/ht12.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/ht13.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/ht14.png)
 
 # Grades
 
