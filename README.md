@@ -22,6 +22,9 @@ https://www.coursera.org/learn/algorithms-part1/home/welcome
 - [Symbol tables](#symbol-tables)
     * [Elementary implementations](#elementary-implementations)
     * [Binary search trees](#binary-search-trees)
+    * [2-3 trees](#2-3-trees)
+    * [Red black trees](#red-black-trees)
+    * [B-trees](#b-trees)
     
 # Order of growth
 
@@ -440,6 +443,26 @@ Both phases are slightly adaptive, though not in any particularly useful manner.
 ![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/2-3t7.png)
 
 ![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/2-3t8.png)
+
+## Red black trees
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/rbt1.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/rbt2.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/rbt3.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/rbt4.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/rbt5.png)
+
+## B trees
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/bt1.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/bt2.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/bt3.png)
 
 # Grades
 
