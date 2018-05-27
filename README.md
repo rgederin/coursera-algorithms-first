@@ -19,7 +19,8 @@ https://www.coursera.org/learn/algorithms-part1/home/welcome
 - [Priority queue](#priority-queue)
     * [Binary heap](#binary-heap)
     * [Heapsort](#heapsort)
-    
+- [Symbol tables](#symbol-tables)
+    * [Elementary implementations](#elementary-implementations)
     
 # Order of growth
 
@@ -370,7 +371,7 @@ With both sub-sorts performed recursively, quick sort requires O(n) extra space 
 
 ![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/hs3.png)
 
-![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/hs4.png)
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/hs5.png)
 
 Heap sort is simple to implement, performs an O(n·lg(n)) in-place sort, but is not stable.
 
@@ -386,6 +387,25 @@ Both phases are slightly adaptive, though not in any particularly useful manner.
 * O(1) extra space (see discussion)
 * O(n·lg(n)) time
 * Not really adaptive
+
+# Symbol tables
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/st1.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/st2.png)
+
+## Elementary implementations
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/st3.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/st4.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/st5.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/st6.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/st7.png)
+
 
 # Grades
 
