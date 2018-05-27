@@ -21,6 +21,7 @@ https://www.coursera.org/learn/algorithms-part1/home/welcome
     * [Heapsort](#heapsort)
 - [Symbol tables](#symbol-tables)
     * [Elementary implementations](#elementary-implementations)
+    * [Binary search trees](#binary-search-trees)
     
 # Order of growth
 
@@ -406,6 +407,39 @@ Both phases are slightly adaptive, though not in any particularly useful manner.
 
 ![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/st7.png)
 
+## Binary search trees
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/bst1.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/bst2.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/bst3.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/bst4.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/bst5.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/bst6.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/bst7.png)
+
+## 2-3 trees
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/2-3t1.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/2-3t2.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/2-3t3.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/2-3t4.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/2-3t5.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/2-3t6.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/2-3t7.png)
+
+![sort](https://github.com/rgederin/coursera-algorithms-first/blob/master/img/2-3t8.png)
 
 # Grades
 
